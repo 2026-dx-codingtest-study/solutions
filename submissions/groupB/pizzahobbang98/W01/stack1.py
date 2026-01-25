@@ -2,12 +2,12 @@ N = int(input("반복 횟수를 입력하세요 : "))
 
 for i in range(N):
     
-    s = input("괄호 문자열[(,)]을 입력하세요 : ")
+    s = input("괄호 문자열을 입력하세요 : ")
     s_lst=[]
     sum=0
     for j in s:
         s_lst.append(j)
-    print(s_lst)
+    
     for k in s_lst:
         if k=='(':
             sum+=1
