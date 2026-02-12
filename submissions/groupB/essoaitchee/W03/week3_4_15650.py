@@ -23,7 +23,7 @@ from itertools import combinations
 input = sys.stdin.readline # 빠른 입력 (시간 초과 방지)
 n, m = map(int, input().split()) # n, m 입력
 
-arr = []
+arr = [] 
 for i in range(n):
   arr.append(i+1)
 
