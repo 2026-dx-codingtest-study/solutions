@@ -12,4 +12,4 @@ for k in p:
     k.append(count+1)
     
 for m in p:
-    print(m[2], end =' ')
+    print(m[2], end =' ') 

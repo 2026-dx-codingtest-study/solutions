@@ -9,7 +9,7 @@ for k in range(1,n+1):
         count+=1
         break
 if count ==0:
-    print(0)
+    print(0) 
     
 
 

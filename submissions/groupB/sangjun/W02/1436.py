@@ -15,7 +15,7 @@ while True:
     if count ==n:
         print(int(num))
         break
-    num+=1
+    num+=1 
             
 
 

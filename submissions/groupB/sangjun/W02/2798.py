@@ -12,7 +12,7 @@ for i in combinations(arr,3):
     hap =0
 
 hap_list = sorted(hap_list, reverse = True)
-print(hap_list[0])
+print(hap_list[0]) 
             
 
 

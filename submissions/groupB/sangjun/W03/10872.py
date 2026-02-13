@@ -5,4 +5,4 @@ if n != 0:
         fact *=i
     print(fact)
 else:
-    print(1)
+    print(1) 
