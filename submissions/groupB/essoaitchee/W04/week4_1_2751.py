@@ -1,7 +1,7 @@
 ####################################################################################
 
-# 팩토리얼
-# https://www.acmicpc.net/problem/10872
+# 수 정렬하기 2
+# https://www.acmicpc.net/problem/2751
 
 # 문제
 # 0보다 크거나 같은 정수 N이 주어진다. 이때, N!을 출력하는 프로그램을 작성하시오.
@@ -16,15 +16,16 @@
 
 import sys 
 
-def fact(num):
-  if num <= 1:
-    return num
-  else:
-    return num * fact(num-1)
+n_list = [] # 정수 저장 list
 
-input = sys.stdin.readline # 빠른 입력 (시간 초과 방지)
-n = int(input())
-#n = 10
+input = sys.stdin.readline
+n = int(input()) # 입력
 
-if n >= 0 and n <= 12: # N(0 ≤ N ≤ 12)일 때
-  print(fact(n)) # 재귀함수 사용
+for i in range(n): # n만큼 반복
+  n_num = int(input()) # 숫자 입력
+  n_list.append(n_num) # 리스트에 저장
+
+n_list.sort() # 정렬
+
+for j in n_list: # 출력
+  print(j)

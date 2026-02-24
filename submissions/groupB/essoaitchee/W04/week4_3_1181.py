@@ -1,7 +1,7 @@
 ####################################################################################
 
-# N과 M (1)
-# https://www.acmicpc.net/problem/15649
+# 단어 정렬
+# https://www.acmicpc.net/problem/1181
 
 # 문제
 # 자연수 N과 M이 주어졌을 때, 아래 조건을 만족하는 길이가 M인 수열을 모두 구하는 프로그램을 작성하시오.
@@ -16,22 +16,22 @@
 ####################################################################################
 
 
-import sys
-from itertools import permutations
+import sys 
 
-input = sys.stdin.readline # 빠른 입력 (시간 초과 방지)
-n, m = map(int, input().split()) # n, m 입력
- 
-arr = []
+t_list = [] # 정수 저장 list
+
+input = sys.stdin.readline
+n = int(input()) # 입력
+
 for i in range(n):
-  arr.append(i+1)
+  text = input().strip() # 단어 입력, 공백 제거
+  t_list.append(text) # 리스트에 저장
 
-# itertools 순열 라이브러리 사용
-for i in permutations(arr, m):
-  print(*i) # *로 괄호 제거
+t_list = list(set(t_list)) # 중복 제거
+t_list.sort(key=lambda x: (len(x), x)) # 키 정렬, 길이 -> 알파벳순 정렬
 
-
-
+for j in t_list: # 출력
+  print(j)
 
 
 

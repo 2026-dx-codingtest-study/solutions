@@ -1,7 +1,7 @@
 ####################################################################################
 
-# 피보나치 수 5
-# https://www.acmicpc.net/problem/10870
+# 좌표 정렬하기
+# https://www.acmicpc.net/problem/11650
 
 # 문제
 # 피보나치 수는 0과 1로 시작한다. 0번째 피보나치 수는 0이고, 1번째 피보나치 수는 1이다. 그 다음 2번째 부터는 바로 앞 두 피보나치 수의 합이 된다.
@@ -18,20 +18,21 @@
 ####################################################################################
 
 
-import sys
- 
-# 피보나치 재귀 함수
-def fibonacci(num1, num2, n):
-  if n == 0:
-      return num1
-  return fibonacci(num2, num1+num2, n-1)
+import sys 
 
-input = sys.stdin.readline # 빠른 입력 (시간 초과 방지)
-n = int(input()) # n 입력받기
+n_list = [] # 정수 저장 list
 
+input = sys.stdin.readline
+n = int(input()) # 입력
 
-print(fibonacci(0, 1, n))
+for i in range(n): # n만큼
+  x, y = map(int, input().split()) # x, y 입력
+  n_list.append([x, y]) # 2차 배열 저장
 
+n_list.sort() # 정렬
+
+for x, y in n_list: # 출력
+    print(x, y)
 
 
 
