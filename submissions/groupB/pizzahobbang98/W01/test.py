@@ -1,3 +1,4 @@
+
 n = int(input("텍스트 문자열 갯수를 입력하세요: "))
 sum=0
 is_valid=True
@@ -17,6 +18,4 @@ for i in range(n):
             break
 
 
-    
-    ()()()())()
-((()))))))))
+  
